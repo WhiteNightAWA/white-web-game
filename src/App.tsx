@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./styles/App.css";
 import {AppBar, createTheme, IconButton, Paper, ThemeProvider, Toolbar, Typography} from "@mui/material";
 import {Outlet, useLocation, useNavigate} from "react-router-dom";

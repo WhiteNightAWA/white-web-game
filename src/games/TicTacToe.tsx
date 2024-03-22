@@ -1,8 +1,7 @@
-import {Box, Button, CardActionArea, Fade, Grid, Stack, Typography} from "@mui/material";
-import {CircleOutlined, Clear, Square} from "@mui/icons-material";
+import {Box, Button, Fade, Stack, Typography} from "@mui/material";
+import {CircleOutlined, Clear} from "@mui/icons-material";
 import {generateBox} from "./components/Board";
 import {useState} from "react";
-import {useNavigate} from "react-router-dom";
 
 function TicTacToe() {
     const [board, setBoard] = useState(new Array(3).fill(new Array(3).fill(null)));
@@ -12,9 +11,6 @@ function TicTacToe() {
         winner: string,
         positions: Array<Array<number>>
     }, any] = useState({winner: "", positions: []});
-
-    const navigator = useNavigate();
-
     function checkWinner(board: Array<Array<string>>) {
         function getBitboard(board: Array<Array<string>>, symbol: string) {
             let bitboard = 0;

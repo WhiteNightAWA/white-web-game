@@ -1,6 +1,3 @@
-import {Box} from "@mui/material";
-import React from "react";
-
 export function generateBox(t: string): Object {
     // t: "Left Right Top Bottom [ Dash Selected ] "
     let sx = {
