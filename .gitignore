@@ -29,7 +29,6 @@ yarn-error.log*
 /coverage
 
 # production
-/docs
 
 # misc
 .DS_Store
