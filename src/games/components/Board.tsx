@@ -1,8 +1,8 @@
 export function generateBox(t: string): Object {
     // t: "Left Right Top Bottom [ Dash Selected ] "
     let sx = {
-        height: "6em",
-        width: "6em",
+        height: "5em",
+        width: "5em",
         borderLeft: "none",
         borderRight: "none",
         borderTop: "none",
