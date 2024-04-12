@@ -5,16 +5,11 @@ import {Outlet, useLocation, useNavigate} from "react-router-dom";
 import {ArrowLeft} from "@mui/icons-material";
 
 function App() {
-    const [dark, setDark] = React.useState(true);
     const location = useLocation();
     const navigate = useNavigate();
 
-    if (window.localStorage.getItem("dark")) {
-        setDark(window.localStorage.getItem("dark") === "true");
-    }
-
     return (
-        <ThemeProvider theme={createTheme({palette: {mode: dark ? "dark" : "light"}})}>
+        <ThemeProvider theme={createTheme({palette: {mode: "dark"}})}>
             <AppBar position="static" sx={{ height: "4em" }}>
                 <Toolbar>
                     {location.pathname !== "/" && <IconButton
